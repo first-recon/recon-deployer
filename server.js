@@ -15,7 +15,7 @@ const global = {
 
 server.get('/build/android/beta', (req, res) => {
   try {
-    res.download('../great-scoutt/build/android/great-scoutt.apk');
+    res.download('../recon-app/build/android/recon-app.apk');
   } catch (e) {
     res.status(500).send('error downloading file');
   }
