@@ -1,5 +1,8 @@
-cd ~/great-scoutt
+echo "moving dirs"
+cd recon-app
+echo "rebasing"
 git pull --rebase
+echo "installing deps"
 yarn install
-yarn link react-native-filesystem-v1
+echo "building artifact"
 npm run build:android
